@@ -4,6 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,13 +18,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageComponent } from './components/pages/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MinhaListaComponent } from './components/pages/minha-lista/minha-lista.component';
+import { CadastrarTarefaComponent } from './components/pages/minha-lista/cadastrar-tarefa/cadastrar-tarefa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     HeaderComponent,
-    MinhaListaComponent
+    MinhaListaComponent,
+    CadastrarTarefaComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +34,15 @@ import { MinhaListaComponent } from './components/pages/minha-lista/minha-lista.
     BrowserAnimationsModule,
     HttpClientModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    MatIconModule,
+    MatSnackBarModule,
+    MatDialogModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule, 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
