@@ -15,7 +15,6 @@
         font-size: 20px;
         width: 250px;
         height: 70px;
-        margin-left: 41%;
         margin-top: 25%;
         transition: .4s;
     }
@@ -37,5 +36,9 @@
     button:hover:after {
         opacity: 1;
         left: 50px;
+    }
+    .button-class {
+        display: flex;
+        justify-content: center;
     }
 }
