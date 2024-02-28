@@ -24,7 +24,7 @@ export class MinhaListaComponent implements OnInit {
   }
 
   obterTarefas() {
-    return this.service.get().subscribe((dados) => {
+    return this.service.getNaoFinalizados().subscribe((dados) => {
       this.tarefas = dados;
     });
   }

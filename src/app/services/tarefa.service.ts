@@ -11,8 +11,12 @@ export class TarefaService {
 
   constructor(private http: HttpClient) { }
 
-  get(): Observable<ITarefa> {
-    return this.http.get<ITarefa>(this.url);
+  getNaoFinalizados(): Observable<ITarefa> {
+    return this.http.get<ITarefa>(`${this.url}/NaoFinalizados`);
+  }
+
+  getFinalizados(): Observable<ITarefa> {
+    return this.http.get<ITarefa>(`${this.url}/Finalizados`);
   }
 
   post(entity: any) {
