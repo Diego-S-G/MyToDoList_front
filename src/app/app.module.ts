@@ -19,6 +19,8 @@ import { HomePageComponent } from './components/pages/home-page/home-page.compon
 import { HeaderComponent } from './components/header/header.component';
 import { MinhaListaComponent } from './components/pages/minha-lista/minha-lista.component';
 import { CadastrarTarefaComponent } from './components/pages/minha-lista/cadastrar-tarefa/cadastrar-tarefa.component';
+import { EditarTarefaComponent } from './components/pages/minha-lista/editar-tarefa/editar-tarefa.component';
+import { ExcluirTarefaComponent } from './components/pages/minha-lista/excluir-tarefa/excluir-tarefa.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { CadastrarTarefaComponent } from './components/pages/minha-lista/cadastr
     HomePageComponent,
     HeaderComponent,
     MinhaListaComponent,
-    CadastrarTarefaComponent
+    CadastrarTarefaComponent,
+    EditarTarefaComponent,
+    ExcluirTarefaComponent
   ],
   imports: [
     BrowserModule,

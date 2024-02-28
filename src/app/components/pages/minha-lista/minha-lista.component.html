@@ -7,11 +7,33 @@
                     <mat-icon id="add-icon">add_box</mat-icon>
                 </button>
             </div>
-            <div class="lista-tarefas">
-                <mat-card class="tarefas-card">
-                    <mat-card-content>oi</mat-card-content>
-                </mat-card>
+            <div *ngIf="tarefas.length > 0; else semTarefas">
+                <div class="lista-tarefas" *ngFor="let tarefa of tarefas">
+                    <mat-card class="tarefas-card">
+                        <mat-card-content>
+                            <h2>{{tarefa.descricao}}</h2>
+                        </mat-card-content>
+                        <mat-card-actions class="buttons">
+                            <div class="first-button-row">
+                                <button class="check-button" mat-icon-button color="primary">
+                                    <mat-icon id="check-icon">check</mat-icon>
+                                </button>
+                            </div>
+                            <div class="second-button-row">
+                                <button (click)="editarDialog(tarefa)" mat-icon-button color="primary">
+                                    <mat-icon>edit</mat-icon>
+                                </button>
+                                <button (click)="excluirDialog(tarefa)" mat-icon-button color="warn">
+                                    <mat-icon>delete</mat-icon>
+                                </button>
+                            </div>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
             </div>
+            <ng-template #semTarefas>
+                <h1>Lista de Tarefas vazia? Tente adicionar uma tarefa!</h1>
+            </ng-template>
         </mat-card-content>
     </mat-card>
 </div>

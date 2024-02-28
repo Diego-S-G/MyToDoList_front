@@ -1,0 +1,22 @@
+.dialog-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 20px;
+
+    button {
+        width: 150px;
+        height: 40px;
+    }
+}
+}
