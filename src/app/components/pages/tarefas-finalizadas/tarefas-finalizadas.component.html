@@ -4,7 +4,7 @@
         <input matInput (keyup)="applyFilter($event)" placeholder="Ter 20 gatos (quem nunca né?)" #input>
     </mat-form-field>
 
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="background-color: #FAFAFA;">
 
         <ng-container matColumnDef="descricao">
             <th mat-header-cell *matHeaderCellDef id="descricao-container-two"> Descrição </th>

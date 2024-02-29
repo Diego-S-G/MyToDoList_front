@@ -1,33 +1,38 @@
-.dialog-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.card {
+    background-image: url(/assets/images/background-delete-all.png);
+    background-color: #F0F0F0;
 
-    h2 {
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-span {
-    color: #F44336;
-}
-
-.buttons {
-    display: flex;
-    margin-left: 15px;
-    margin-bottom: 20px;
-
-    #delete-button {
-        color: #00AB66;
+    .dialog-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
+        h2 {
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
-    mat-icon{
-        transform: scale(1.5);
+    
+    span {
+        color: #F44336;
     }
-
-    button {
-        width: 150px;
-        height: 40px;
+    
+    .buttons {
+        display: flex;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    
+        #delete-button {
+            color: #00AB66;
+        }
+        mat-icon{
+            transform: scale(1.5);
+        }
+    
+        button {
+            width: 150px;
+            height: 40px;
+        }
     }
-}
+    }
 }

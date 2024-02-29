@@ -1,31 +1,37 @@
-h2 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
+.card {
+    background-image: url(/assets/images/background-update.png);
+    background-color: #F0F0F0;
 
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    margin-left: 15px;
-    margin-bottom: 20px;
-
-    #update-button {
-        color: #00AB66;
+    h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
-    mat-icon{
-        transform: scale(1.5);
+    
+    .form {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-
-    button {
-        width: 150px;
-        height: 40px;
+    
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    
+        #update-button {
+            color: #00AB66;
+        }
+        mat-icon{
+            transform: scale(1.5);
+        }
+    
+        button {
+            width: 150px;
+            height: 40px;
+        }
     }
 }
