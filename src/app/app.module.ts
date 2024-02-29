@@ -11,6 +11,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,9 @@ import { MinhaListaComponent } from './components/pages/minha-lista/minha-lista.
 import { CadastrarTarefaComponent } from './components/pages/minha-lista/cadastrar-tarefa/cadastrar-tarefa.component';
 import { EditarTarefaComponent } from './components/pages/minha-lista/editar-tarefa/editar-tarefa.component';
 import { ExcluirTarefaComponent } from './components/pages/minha-lista/excluir-tarefa/excluir-tarefa.component';
+import { TarefasFinalizadasComponent } from './components/pages/tarefas-finalizadas/tarefas-finalizadas.component';
+import { ExcluirFinalizadasDialogComponent } from './components/pages/tarefas-finalizadas/excluir-finalizadas-dialog/excluir-finalizadas-dialog.component';
+import { ExcluirTodasFinalizadasDialogComponent } from './components/pages/tarefas-finalizadas/excluir-todas-finalizadas-dialog/excluir-todas-finalizadas-dialog.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,10 @@ import { ExcluirTarefaComponent } from './components/pages/minha-lista/excluir-t
     MinhaListaComponent,
     CadastrarTarefaComponent,
     EditarTarefaComponent,
-    ExcluirTarefaComponent
+    ExcluirTarefaComponent,
+    TarefasFinalizadasComponent,
+    ExcluirFinalizadasDialogComponent,
+    ExcluirTodasFinalizadasDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +53,8 @@ import { ExcluirTarefaComponent } from './components/pages/minha-lista/excluir-t
     MatInputModule,
     MatFormFieldModule,
     FormsModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

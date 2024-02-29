@@ -6,6 +6,7 @@
                 <button class="add-button" (click)="cadastrarDialog()">
                     <mat-icon id="add-icon">add_box</mat-icon>
                 </button>
+                <button mat-stroked-button class="finalizados-button" routerLink="/tarefas-finalizadas" color="warn">Tarefas Finalizadas</button>
             </div>
             <div *ngIf="tarefas.length > 0; else semTarefas" class="tarefas-container">
                 <div *ngFor="let tarefa of tarefas" class="lista-tarefas" >

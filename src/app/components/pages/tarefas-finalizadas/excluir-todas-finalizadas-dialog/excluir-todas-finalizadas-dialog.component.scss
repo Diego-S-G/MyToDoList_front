@@ -1,0 +1,33 @@
+.dialog-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+span {
+    color: #F44336;
+}
+
+.buttons {
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 20px;
+
+    #delete-button {
+        color: #00AB66;
+    }
+    mat-icon{
+        transform: scale(1.5);
+    }
+
+    button {
+        width: 150px;
+        height: 40px;
+    }
+}
+}

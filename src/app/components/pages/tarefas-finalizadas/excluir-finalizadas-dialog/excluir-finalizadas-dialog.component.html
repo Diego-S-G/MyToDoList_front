@@ -1,0 +1,10 @@
+<div class="dialog-container">
+    <h2 mat-dialog-title>Excluir Tarefa?</h2>
+    <mat-dialog-content>
+        Deseja excluir a tarefa?
+    </mat-dialog-content>
+    <mat-dialog-actions class="buttons">
+        <button mat-button color="primary" (click)="excluir(id)" [mat-dialog-close]="false" id="delete-button"><mat-icon>pets</mat-icon></button>
+        <button mat-button color="warn" mat-dialog-close cdkFocusInitial><mat-icon>close</mat-icon></button>
+    </mat-dialog-actions>
+</div>

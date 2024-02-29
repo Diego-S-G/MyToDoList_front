@@ -1,0 +1,31 @@
+<div class="main-container">
+    <mat-form-field>
+        <mat-label>Filtro</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ter 20 gatos (quem nunca né?)" #input>
+    </mat-form-field>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="descricao">
+            <th mat-header-cell *matHeaderCellDef id="descricao-container-two"> Descrição </th>
+            <td mat-cell *matCellDef="let tarefa" id="descricao-container"> {{tarefa.descricao}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="buttons">
+            <th mat-header-cell *matHeaderCellDef><button (click)="excluirTodosDialog()" mat-raised-button color="warn">Excluir Tarefas</button></th>
+            <td mat-cell *matCellDef="let tarefa">
+                <button (click)="excluirDialog(tarefa)" mat-icon-button color="warn" class="deleteButton">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+        <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell" colspan="4">Nenhum dado com o filtro "{{input.value}}"</td>
+        </tr>
+    </table>
+</div>
