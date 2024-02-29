@@ -77,7 +77,11 @@ export class MinhaListaComponent implements OnInit {
   }
 
   finalizarTarefa(tarefa: any): void {
-    
+    tarefa.finalizado = true;
+    this.service.put(tarefa).subscribe(() => {
+      this.openSnackBar('Tarefa finalizada com sucesso. Parabéns!')
+      this.obterTarefas();
+    })
   }
 
   openSnackBar(mensagem: string) {

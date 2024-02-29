@@ -1,17 +1,20 @@
 .main-content {
-    .main-card {
+    margin-top: 50px;
+    .main-container {
+        background-color: transparent;
+
         #main-title {
             font-size: 40px;
-            text-decoration: underline;
+            font-weight: 430;
             display: flex;
             justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
             margin-top: 30px;
         }
 
         .cadastro-tarefa {
-            margin-bottom: 50px;
-            margin-left: 5px;
+            margin-bottom: 20px;
+            margin-left: 25px;
 
             .add-button {
                 border: none;
@@ -27,9 +30,48 @@
                 transform: scale(1.3);
             }
         }
-
-        .check-button {
-            color: #00AB66;
+        .tarefas-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .lista-tarefas {
+            width: 30%;
+            margin-bottom: 2em;
+            margin-right: 1.5em;
+            margin-left: 1.5em;
+           
+            .tarefas-card {
+                background-color: #FFFF80;
+                height: 40vh;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+    
+                .content {
+                    height: 70%;
+                    h2 {
+                        margin-top: 20px;
+                        word-wrap: break-word;
+                        word-break: normal;
+                        display: flex;
+                        text-align: center;
+                        flex-direction: column;
+                    }
+        
+                }
+    
+                .buttons {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+    
+                    .check-button {
+                        color: #00AB66;
+                    }
+                }
+            }
         }
     }
+
 }

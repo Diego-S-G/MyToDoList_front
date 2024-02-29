@@ -13,8 +13,16 @@ h2 {
 
 .buttons {
     display: flex;
+    justify-content: center;
     margin-left: 15px;
     margin-bottom: 20px;
+
+    #update-button {
+        color: #00AB66;
+    }
+    mat-icon{
+        transform: scale(1.5);
+    }
 
     button {
         width: 150px;

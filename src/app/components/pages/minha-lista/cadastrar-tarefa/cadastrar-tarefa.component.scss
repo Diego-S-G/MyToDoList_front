@@ -16,6 +16,12 @@ h2 {
     justify-content: center;
     margin-bottom: 20px;
 
+    #add-button {
+        color: #00AB66;
+    }
+    mat-icon{
+        transform: scale(1.5);
+    }
     button {
         width: 150px;
         height: 40px;
