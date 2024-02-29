@@ -1,4 +1,4 @@
-<div class="main-container">
+<div *ngIf="tarefasFinalizadas.length > 0; else semTarefasFinalizadas"  class="main-container">
     <mat-form-field>
         <mat-label>Filtro</mat-label>
         <input matInput (keyup)="applyFilter($event)" placeholder="Ter 20 gatos (quem nunca né?)" #input>
@@ -29,3 +29,6 @@
         </tr>
     </table>
 </div>
+<ng-template #semTarefasFinalizadas>
+    <h2 style="margin-left: 50px; margin-top: 100px;">Nada aqui... Tente finalizar uma tarefa primeiro. Você consegue!</h2>
+</ng-template>
