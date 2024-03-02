@@ -23,6 +23,6 @@ export class ExcluirTodasFinalizadasDialogComponent {
 
   fecharDialog(): void {
     this.dialogRef.close();
-    this.salvarClicado.emit('Todas as tarefas foram excluídos com sucesso!');
+    this.salvarClicado.emit('Todas as tarefas foram excluídas com sucesso!');
   }
 }
